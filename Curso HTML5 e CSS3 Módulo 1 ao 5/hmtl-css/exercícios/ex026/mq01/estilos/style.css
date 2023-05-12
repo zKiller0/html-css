@@ -1,0 +1,36 @@
+/* Estilo para Telas */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html , body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: lightblue;
+}
+
+header h1 {
+    text-align: center;
+}
+
+menu li {
+    background-color: rgb(196, 196, 227);
+    display: inline-block;
+    padding: 10px;
+}
+
+menu ul {
+    list-style-type: none;
+    background-color: lavender;
+}
+
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
