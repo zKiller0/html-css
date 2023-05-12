@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário 10 </title>
+</head>
+<body>
+    <h1> Exemplo de Formulário </h1>
+    <form action="cadastro.php"> 
+        <p>
+            <label for="iano"> Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="2000" max="2023" oninput="calcidade()">
+        </p>
+        <p>
+            <label for="idade1"> Sua idade é: </label>
+            <output id="idade1"> 0 </output>
+        </p>
+    </form>
+    <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            idade1.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
